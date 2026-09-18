@@ -43,7 +43,7 @@ export default function Navbar() {
 
         <button
           aria-label="Toggle navigation"
-          className="grid size-10 place-items-center rounded-full bg-secondary md:hidden"
+          className="grid size-10 place-items-center rounded-full bg-card/50 md:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X size={18} /> : <Menu size={18} />}

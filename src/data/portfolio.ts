@@ -139,3 +139,85 @@ export const research = [
   "Human-AI Collaboration through Intuitive Web Interfaces",
   "Design and Evaluation of Adaptive User Interfaces",
 ];
+export const IMAGES = [
+  {
+    src: "/works/0.png",
+    alt: "login page",
+    title: "Login Page",
+  },
+  {
+    src: "/works/1.jpeg",
+    alt: "letters page",
+    title: "Letters page",
+  },
+  {
+    src: "/works/2.png",
+    alt: "letters dashboard",
+    title: "Letters Dashboard",
+  },
+  {
+    src: "/works/8.png",
+    alt: "letters dashboard",
+    title: "Letters Dashboard",
+  },
+  {
+    src: "/works/3.png",
+    alt: "letters form",
+    title: "Letters Form",
+  },
+  {
+    src: "/works/4.png",
+    alt: "letter details",
+    title: "Letter Details",
+  },
+  {
+    src: "/works/5.png",
+    alt: "letter parafs",
+    title: "Letter Parafs",
+  },
+  {
+    src: "/works/6.png",
+    alt: "letter logs",
+    title: "Letter Logs",
+  },
+  {
+    src: "/works/7.png",
+    alt: "letter stamp",
+    title: "Letter Stamp",
+  },
+  {
+    src: "/works/9.png",
+    alt: "ERP dashboard",
+    title: "ERP Dashboard",
+  },
+  {
+    src: "/works/10.png",
+    alt: "Wellness dashboard",
+    title: "Wellness Dashboard",
+  },
+  {
+    src: "/works/11.png",
+    alt: "Wellness landing",
+    title: "Wellness Landing",
+  },
+  {
+    src: "/works/12.png",
+    alt: "Wellness landing",
+    title: "Wellness Landing",
+  },
+  {
+    src: "/works/13.png",
+    alt: "Lawyer landing",
+    title: "Lawyer Landing",
+  },
+  {
+    src: "/works/14.png",
+    alt: "Lawyer landing",
+    title: "Lawyer Landing",
+  },
+  {
+    src: "/works/15.png",
+    alt: "Lawyer landing",
+    title: "Lawyer Landing",
+  },
+];
