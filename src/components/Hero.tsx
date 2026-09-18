@@ -2,7 +2,7 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import { profile } from "@/data/portfolio";
 import { Button } from "./ui/button";
-import { SiGithub, SiLinkerd } from "@icons-pack/react-simple-icons";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -34,8 +34,8 @@ export default function Hero() {
           </div>
 
           <div className="mt-8 flex items-center gap-5 text-muted-foreground">
-            <a aria-label="GitHub" href={profile.github} target="_blank" rel="noreferrer" className="transition hover:text-foreground"><SiGithub size={18} /></a>
-            <a aria-label="LinkedIn" href={profile.linkedin} target="_blank" rel="noreferrer" className="transition hover:text-foreground"><SiLinkerd size={18} /></a>
+            <a aria-label="GitHub" href={profile.github} target="_blank" rel="noreferrer" className="transition hover:text-foreground"><FaGithub size={18} /></a>
+            <a aria-label="LinkedIn" href={profile.linkedin} target="_blank" rel="noreferrer" className="transition hover:text-foreground"><FaLinkedin size={18} /></a>
             <a href="#about" className="ml-2 flex items-center gap-2 text-xs uppercase tracking-widest hover:text-foreground">
               Scroll <ArrowDown size={14} />
             </a>

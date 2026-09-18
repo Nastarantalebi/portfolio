@@ -4,10 +4,10 @@ export const profile = {
   intro:
     "I design and build intuitive digital experiences where thoughtful interfaces meet solid front-end engineering.",
   location: "Isfahan, Iran",
-  email: "hello@nastarantalebi.dev",
+  email: "nastarantalebi.1382@gmail.com",
   github: "https://github.com/Nastarantalebi",
-  linkedin: "https://www.linkedin.com/",
-  cv: "/Nastaran-Talebi-CV.pdf",
+  linkedin: "https://www.linkedin.com/in/nastaran-talebi-9227a6247/",
+  // cv: "/Nastaran-Talebi-CV.pdf",
 };
 
 export const experience = [
@@ -48,6 +48,7 @@ export const projects = [
     description:
       "End-to-end intra- and inter-organizational correspondence platform covering letter registration, approval workflow, digital signature and stamp, and dispatch to other organizations or individual recipients.",
     tags: ["Workflow Engine", "Digital Signature", "Enterprise UI", "Document Management"],
+    href: "https://letters.mesal.ir/"
   },
   {
     number: "02",
@@ -57,6 +58,7 @@ export const projects = [
     description:
       "Centralized AI gateway where each organization holds a wallet, tops up credit, and allocates budget to its users, enabling access to LLMs and other AI features across all connected internal systems.",
     tags: ["LLM Integration", "Wallet System", "Multi-Tenant", "Usage Metering"],
+    href: ""
   },
   {
     number: "03",
@@ -66,6 +68,7 @@ export const projects = [
     description:
       "Front-end contribution to software supporting end-to-end factory accounting and operational management.",
     tags: ["React", "Enterprise UI", "Forms"],
+    href:"https://erp.mesal.ir/"
   },
 
   {
@@ -76,6 +79,7 @@ export const projects = [
     description:
       "A comprehensive electronic medical record platform covering patient encounters, consultations and pharmacy interactions.",
       tags: ["React", "TypeScript", "UX", "Enterprise"],
+      href: "https://emr.mesal.ir/"
     },
   //   {
   //     number: "05",
@@ -85,16 +89,18 @@ export const projects = [
   //   description:
   //   "Front-end work across CRM sales planning and legal-practice workflows, translating complex business processes into usable interfaces.",
   //   tags: ["UI/UX", "React", "Workflow"],
+  //   href:"https://crm.mesal.ir/"
+    
   // },
-  {
-    number: "05",
-    title: "Tours & Hotels Agency",
-    type: "Travel · Front-End",
-    category: "frontend" as ProjectCategory,
-    description:
-    "A responsive booking platform for tours and hotels with an integrated international visa application flow.",
-    tags: ["React", "TypeScript", "Booking", "Responsive"],
-  },
+  // {
+  //   number: "06",
+  //   title: "Tours & Hotels Agency",
+  //   type: "Travel · Front-End",
+  //   category: "frontend" as ProjectCategory,
+  //   description:
+  //   "A responsive booking platform for tours and hotels with an integrated international visa application flow.",
+  //   tags: ["React", "TypeScript", "Booking", "Responsive"],
+  // },
   {
     number: "06",
     title: "Job Recommendation System",
@@ -118,9 +124,9 @@ export const projects = [
 ];
 
 export const skills = {
-  frontend: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Redux", "Context API", "Node.js"],
+  frontend: ["React", "TypeScript", "JavaScript", "HTML/CSS","Next.js", "Redux", "Zustand", "Context API", "Node.js", "React-router-dom", "React-hook-form", "Docker"],
   design: ["UI/UX Design", "HCI", "Figma", "Wireframing", "Prototyping", "Usability Testing"],
-  ai: ["Python", "scikit-learn", "TensorFlow", "PyTorch", "Classification", "Regression", "Feature Engineering"],
+  ai: ["Python", "scikit-learn", "TensorFlow", "PyTorch", "Classification", "Regression", "Feature Engineering", "Image processing"],
   data: ["NumPy", "Pandas", "Matplotlib", "Seaborn", "Data Analysis", "Statistical Analysis"],
 };
 

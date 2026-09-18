@@ -3,10 +3,11 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Work from "@/components/Work";
 import About from "@/components/About";
-import Experience from "@/components/Experience";
+// import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
-import Research from "@/components/Research";
+// import Research from "@/components/Research";
 import Contact from "@/components/Contact";
+import WorkExperience from "./components/WorkExperience";
 
 export default function App() {
   return (
@@ -17,9 +18,10 @@ export default function App() {
         <Marquee />
         <Work />
         <About />
-        <Experience />
+        <WorkExperience />
+        {/* <Experience /> */}
         <Skills />
-        <Research />
+        {/* <Research /> */}
         <Contact />
       </main>
     </div>

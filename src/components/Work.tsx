@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
-import { projects, type ProjectCategory } from "@/data/portfolio";
+import { projects } from "@/data/portfolio";
 import SectionHeading from "./SectionHeading";
 import { Badge } from "./ui/badge";
 
