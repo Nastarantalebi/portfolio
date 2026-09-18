@@ -11,14 +11,16 @@ export interface PerspectiveCarouselItem {
   alt?: string;
 }
 
-export interface PerspectiveCarouselProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, "onChange"> {
+export interface PerspectiveCarouselProps extends Omit<
+  React.HTMLAttributes<HTMLDivElement>,
+  "onChange"
+> {
   items: PerspectiveCarouselItem[];
   activeIndex?: number;
   defaultActiveIndex?: number;
   onActiveIndexChange?: (index: number) => void;
   loop?: boolean;
-  slideWidth?: number;
+  slideWidth?: number | "auto";
   rotationStep?: number;
   inactiveScale?: number;
   transition?: Transition;
@@ -37,7 +39,8 @@ const DEFAULT_TRANSITION: Transition = {
   duration: 0.9,
 };
 
-const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
+const clamp = (value: number, min: number, max: number) =>
+  Math.min(Math.max(value, min), max);
 
 export function PerspectiveCarousel({
   items,
@@ -63,11 +66,28 @@ export function PerspectiveCarousel({
 }: PerspectiveCarouselProps) {
   const maxIndex = Math.max(0, items.length - 1);
   const [uncontrolledIndex, setUncontrolledIndex] = React.useState(() =>
-    clamp(defaultActiveIndex, 0, maxIndex)
+    clamp(defaultActiveIndex, 0, maxIndex),
   );
+  const [containerWidth, setContainerWidth] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!containerRef.current) return;
+
+    const observer = new ResizeObserver(([entry]) => {
+      setContainerWidth(entry.contentRect.width);
+    });
+
+    observer.observe(containerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
   const currentIndex = clamp(activeIndex ?? uncontrolledIndex, 0, maxIndex);
-  const safeSlideWidth = Math.max(96, slideWidth);
+  const safeSlideWidth =
+    slideWidth === "auto"
+      ? Math.min(containerWidth * 0.8, 710)
+      : Math.max(96, slideWidth);
   const safeInactiveScale = clamp(inactiveScale, 0.5, 1);
+  const containerRef = React.useRef<HTMLDivElement>(null);
 
   const selectSlide = React.useCallback(
     (nextIndex: number) => {
@@ -85,7 +105,7 @@ export function PerspectiveCarousel({
 
       onActiveIndexChange?.(resolvedIndex);
     },
-    [activeIndex, items.length, loop, maxIndex, onActiveIndexChange]
+    [activeIndex, items.length, loop, maxIndex, onActiveIndexChange],
   );
 
   if (!items.length) {
@@ -111,15 +131,20 @@ export function PerspectiveCarousel({
       selectSlide(currentIndex + 1);
     }
   };
+  const responsiveRotation = containerWidth < 640 ? 35 : rotationStep;
 
   return (
     <div
+      ref={containerRef}
       role="region"
       aria-roledescription="carousel"
       aria-label="Perspective image carousel"
       tabIndex={tabIndex ?? 0}
       onKeyDown={handleKeyDown}
-      className={cn("relative isolate h-full w-full overflow-hidden", className)}
+      className={cn(
+        "relative isolate h-full w-full overflow-hidden",
+        className,
+      )}
       {...props}
     >
       <div
@@ -143,10 +168,10 @@ export function PerspectiveCarousel({
                 <motion.div
                   className={cn(
                     "flex w-full flex-col items-center gap-3 will-change-transform",
-                    slideClassName
+                    slideClassName,
                   )}
                   animate={{
-                    rotateY: (currentIndex - index) * rotationStep,
+                    rotateY: (currentIndex - index) * responsiveRotation,
                     scale: isActive ? 1 : safeInactiveScale,
                   }}
                   transition={transition}
@@ -166,7 +191,13 @@ export function PerspectiveCarousel({
                     type="button"
                     aria-label={`Show ${item.title}`}
                     aria-current={isActive ? "true" : undefined}
-                    className="aspect-video w-full cursor-pointer"
+                    className="
+                        block
+                        aspect-video
+                        w-full
+                        overflow-hidden
+                        rounded-lg
+                      "
                     onClick={() => selectSlide(index)}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -176,11 +207,10 @@ export function PerspectiveCarousel({
                       draggable={false}
                       className={cn(
                         "h-full w-full  select-none rounded-lg object-contain shadow-xl",
-                        imageClassName
+                        imageClassName,
                       )}
                     />
                   </button>
-
                 </motion.div>
               </div>
             );
@@ -192,7 +222,7 @@ export function PerspectiveCarousel({
         <div
           className={cn(
             "absolute inset-x-4 bottom-5 z-10 mx-auto flex w-fit items-center justify-center gap-3 rounded-full border border-neutral-300/80 bg-neutral-200/70 px-2 text-neutral-700 shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-neutral-900/70 dark:text-neutral-100",
-            controlsClassName
+            controlsClassName,
           )}
         >
           <button
@@ -215,7 +245,9 @@ export function PerspectiveCarousel({
                   aria-current={currentIndex === index ? "true" : undefined}
                   className={cn(
                     "h-2 rounded-full bg-current transition-[width,opacity] duration-300",
-                    currentIndex === index ? "w-7 opacity-100" : "w-2 opacity-30"
+                    currentIndex === index
+                      ? "w-7 opacity-100"
+                      : "w-2 opacity-30",
                   )}
                   onClick={() => selectSlide(index)}
                 />

@@ -25,8 +25,13 @@ const WorkExperience = () => {
           <PerspectiveCarousel
             items={IMAGES}
             defaultActiveIndex={1}
-            slideWidth={710}
-            className="h-[560px]"
+            slideWidth="auto"
+            className="
+              h-[320px]
+              sm:h-[420px]
+              md:h-[520px]
+              lg:h-[560px]
+            "
           />
         </motion.div>
       </div>
