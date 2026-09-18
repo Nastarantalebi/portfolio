@@ -38,7 +38,6 @@ export default function Contact() {
     }
   };
 
-console.log(profile.email);
 
   return (
     <section id="contact" className="px-6 pb-10 pt-20 md:px-10">
