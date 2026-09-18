@@ -221,7 +221,31 @@ export function PerspectiveCarousel({
       {showControls && (
         <div
           className={cn(
-            "absolute inset-x-4 bottom-5 z-10 mx-auto flex w-fit items-center justify-center gap-3 rounded-full border border-neutral-300/80 bg-neutral-200/70 px-2 text-neutral-700 shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-neutral-900/70 dark:text-neutral-100",
+            `
+  absolute
+  bottom-5
+  left-1/2
+  z-10
+  flex
+  -translate-x-1/2
+  items-center
+  justify-center
+  gap-2
+  rounded-full
+  border
+  border-neutral-300/80
+  bg-neutral-200/70
+  px-1.5
+  py-1
+  text-neutral-700
+  shadow-sm
+  backdrop-blur-sm
+  dark:border-white/10
+  dark:bg-neutral-900/70
+  dark:text-neutral-100
+  sm:gap-3
+  sm:px-2
+  `,
             controlsClassName,
           )}
         >
@@ -229,7 +253,19 @@ export function PerspectiveCarousel({
             type="button"
             aria-label="Show previous slide"
             disabled={isPreviousDisabled}
-            className="inline-flex size-9 items-center justify-center rounded-full transition-colors hover:bg-white/70 disabled:cursor-not-allowed disabled:opacity-35 dark:hover:bg-white/10"
+            className="
+            inline-flex
+            size-7
+            items-center
+            justify-center
+            rounded-full
+            transition-colors
+            hover:bg-white/70
+            disabled:cursor-not-allowed
+            disabled:opacity-35
+            sm:size-9
+            dark:hover:bg-white/10
+            "
             onClick={() => selectSlide(currentIndex - 1)}
           >
             <ChevronLeft className="size-5" />

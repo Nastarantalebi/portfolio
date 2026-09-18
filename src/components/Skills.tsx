@@ -27,7 +27,7 @@ const groups = [
 
 export default function Skills() {
   return (
-    <section className="relative overflow-hidden bg-secondary/20 px-6 py-28 md:px-10 md:py-36">
+    <section id="skills" className="relative overflow-hidden bg-secondary/20 px-6 py-28 md:px-10 md:py-36">
       {/* Background decoration */}
       <motion.div
         className="pointer-events-none absolute -right-32 top-20 size-96 rounded-full bg-primary/5 blur-3xl"

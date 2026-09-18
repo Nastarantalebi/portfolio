@@ -6,7 +6,7 @@ import { IMAGES } from "@/data/portfolio";
 const WorkExperience = () => {
   return (
     <section
-      id="work"
+      id="experience"
       className="bg-[#ececec] px-6 py-20 text-neutral-800 dark:bg-neutral-950 dark:text-neutral-100 md:px-10 md:py-10"
     >
       <div className="mx-auto max-w-7xl">
