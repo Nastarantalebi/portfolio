@@ -46,7 +46,7 @@ export const projects = [
     category: "frontend" as ProjectCategory,
     description:
       "End-to-end intra- and inter-organizational correspondence platform covering letter registration, approval workflow, digital signature and stamp, and dispatch to other organizations or individual recipients.",
-    tags: ["Workflow Engine", "Digital Signature", "Enterprise UI", "Document Management"],
+    tags: ["Workflow Engine", "Enterprise UI", "Document Management", "Multi-Tenant"],
     href: "https://letters.mesal.ir/"
   },
   {
@@ -66,10 +66,9 @@ export const projects = [
     category: "frontend" as ProjectCategory,
     description:
       "Front-end contribution to software supporting end-to-end factory accounting and operational management.",
-    tags: ["React", "Enterprise UI", "Forms"],
+    tags: ["React", "Enterprise UI", "Forms", "Multi-Tenant"],
     href:"https://erp.mesal.ir/"
   },
-
   {
     number: "04",
     title: "EMR System",
@@ -77,29 +76,9 @@ export const projects = [
     category: "frontend" as ProjectCategory,
     description:
       "A comprehensive electronic medical record platform covering patient encounters, consultations and pharmacy interactions.",
-      tags: ["React", "TypeScript", "UX", "Enterprise"],
+      tags: ["React", "TypeScript", "UX", "Enterprise", "Multi-Tenant"],
       href: "https://emr.mesal.ir/"
-    },
-  //   {
-  //     number: "05",
-  //     title: "CRM & Legal Practice",
-  //   type: "Enterprise · Front-End",
-  //   category: "frontend" as ProjectCategory,
-  //   description:
-  //   "Front-end work across CRM sales planning and legal-practice workflows, translating complex business processes into usable interfaces.",
-  //   tags: ["UI/UX", "React", "Workflow"],
-  //   href:"https://crm.mesal.ir/"
-    
-  // },
-  // {
-  //   number: "06",
-  //   title: "Tours & Hotels Agency",
-  //   type: "Travel · Front-End",
-  //   category: "frontend" as ProjectCategory,
-  //   description:
-  //   "A responsive booking platform for tours and hotels with an integrated international visa application flow.",
-  //   tags: ["React", "TypeScript", "Booking", "Responsive"],
-  // },
+  },
   {
     number: "06",
     title: "Job Recommendation System",
