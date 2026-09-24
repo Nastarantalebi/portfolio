@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="hero-glow relative min-h-dvh overflow-hidden px-6 pb-16 pt-3 sm:px-8 md:px-10 md:pb-0 md:pt-5 lg:pt-15">
+    <section className="hero-glow relative pb-6 overflow-hidden px-6 pt-3 sm:px-8 md:px-10 md:pb-0 md:pt-5 lg:pt-15">
       <div className="mx-auto grid min-h-fit max-w-7xl items-center gap-10 sm:gap-14 md:min-h-[calc(100dvh-10rem)] md:grid-cols-[1.05fr_.95fr]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -76,6 +76,9 @@ export default function Hero() {
               alt="Nastaran Talebi"
               className="h-full w-full object-cover object-top grayscale-[15%]"
             />
+            {/* Blurred fade overlay at bottom */}
+            <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-bg-gray-100 via-bg-gray-500 rounded-full shadow-2xl to-bg-gray-100 backdrop-blur-md" />
+            ;
           </div>
           <div className="absolute -bottom-4 right-2 max-w-[calc(100%-1.5rem)] rounded-2xl border border-border bg-card/10 px-4 py-3 shadow-xl backdrop-blur sm:bottom-2 sm:right-4 sm:px-5 sm:py-4 md:-right-6 xl:-right-10">
             <p className="text-[10px] uppercase tracking-[.2em] text-muted-foreground sm:text-xs">

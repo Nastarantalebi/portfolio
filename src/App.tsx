@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 // import Research from "@/components/Research";
 import Contact from "@/components/Contact";
 import WorkExperience from "./components/WorkExperience";
+import Research from "./components/Research";
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
         <WorkExperience />
         {/* <Experience /> */}
         <Skills />
-        {/* <Research /> */}
+        <Research />
         <Contact />
       </main>
     </div>

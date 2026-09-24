@@ -116,7 +116,7 @@ export default function Skills() {
                     }}
                   />
 
-                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
                     {group.title}
                   </p>
                 </div>

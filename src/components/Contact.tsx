@@ -40,7 +40,7 @@ export default function Contact() {
 
 
   return (
-    <section id="contact" className="px-6 pb-10 pt-20 md:px-10">
+    <section id="contact" className="px-6 pb-10 md:px-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export default function Contact() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left column — copy */}
-          <div className="flex flex-col justify-center px-7 py-16 md:px-14 md:py-24">
+          <div className="flex flex-col justify-center px-7 py-12 md:px-14 md:py-15">
             <Mail className="mb-7 size-7 text-accent" />
             <p className="text-xs uppercase tracking-[.25em] text-primary-foreground/50">
               Have a project in mind?

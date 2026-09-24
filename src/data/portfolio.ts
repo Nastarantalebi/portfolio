@@ -2,12 +2,11 @@ export const profile = {
   name: "Nastaran Talebi",
   role: "Front-End Developer · UI/UX Designer",
   intro:
-    "I design and build intuitive digital experiences where thoughtful interfaces meet solid front-end engineering.",
+    "I build digital experiences powered by thoughtful design and intelligent systems where users understand how AI works, and complexity becomes intuitive. Solid front-end engineering at the core.",
   location: "Isfahan, Iran",
   email: "nastarantalebi.1382@gmail.com",
   github: "https://github.com/Nastarantalebi",
   linkedin: "https://www.linkedin.com/in/nastaran-talebi-9227a6247/",
-  // cv: "/Nastaran-Talebi-CV.pdf",
 };
 
 export const experience = [
@@ -124,21 +123,25 @@ export const projects = [
 ];
 
 export const skills = {
-  frontend: ["React", "TypeScript", "JavaScript", "HTML/CSS","Next.js", "Redux", "Zustand", "Context API", "Node.js", "React-router-dom", "React-hook-form", "Docker"],
+  frontend: ["React", "TypeScript", "JavaScript", "HTML/CSS","Next.js", "Redux", "Zustand", "Context API", "Node.js", "React-router-dom", "React-hook-form", "Docker", "Framer-motion"],
   design: ["UI/UX Design", "HCI", "Figma", "Wireframing", "Prototyping", "Usability Testing"],
   ai: ["Python", "scikit-learn", "TensorFlow", "PyTorch", "Classification", "Regression", "Feature Engineering", "Image processing"],
   data: ["NumPy", "Pandas", "Matplotlib", "Seaborn", "Data Analysis", "Statistical Analysis"],
 };
 
+
 export const research = [
-  "Advanced Front-End Architectures for Scalable Web Applications",
-  "User Experience Optimization in Complex Enterprise Software",
-  "AI-Driven User Interface Personalization and Adaptation",
-  "Intelligent Agent Integration in Front-End Development Frameworks",
-  "Machine Learning for Enhanced User Experience Analytics",
-  "Human-AI Collaboration through Intuitive Web Interfaces",
-  "Design and Evaluation of Adaptive User Interfaces",
+  // --- Interpretable AI Interfaces ---
+  "Explainability in Recommendations: How UI design affects user trust in ML decisions",
+  "Feature Importance Visualization: Presenting model rationale without overwhelming users",
+  "Confidence Communication: When to show uncertainty and how users interpret it",
+  
+  // --- Adaptive UI Systems ---
+  "Behavior-Driven Complexity: Learning user expertise from interaction patterns",
+  "Progressive Information Disclosure: Adapting interface density based on proficiency",
+  "Real-time UX Adaptation: Measuring performance impact of dynamic interface changes",
 ];
+
 export const IMAGES = [
   {
     src: "/works/0.png",
@@ -151,25 +154,11 @@ export const IMAGES = [
     title: "Letters page",
   },
   {
-    src: "/works/2.png",
-    alt: "letters dashboard",
-    title: "Letters Dashboard",
-  },
-  {
     src: "/works/8.png",
     alt: "letters dashboard",
     title: "Letters Dashboard",
   },
-  {
-    src: "/works/3.png",
-    alt: "letters form",
-    title: "Letters Form",
-  },
-  {
-    src: "/works/4.png",
-    alt: "letter details",
-    title: "Letter Details",
-  },
+
   {
     src: "/works/5.png",
     alt: "letter parafs",
@@ -201,23 +190,14 @@ export const IMAGES = [
     title: "Wellness Landing",
   },
   {
+    src: "/works/16.png",
+    alt: "Wellness plans",
+    title: "Wellness plans",
+  },
+  {
     src: "/works/12.png",
     alt: "Wellness landing",
     title: "Wellness Landing",
   },
-  {
-    src: "/works/13.png",
-    alt: "Lawyer landing",
-    title: "Lawyer Landing",
-  },
-  {
-    src: "/works/14.png",
-    alt: "Lawyer landing",
-    title: "Lawyer Landing",
-  },
-  {
-    src: "/works/15.png",
-    alt: "Lawyer landing",
-    title: "Lawyer Landing",
-  },
+
 ];

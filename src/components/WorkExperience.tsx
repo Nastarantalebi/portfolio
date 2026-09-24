@@ -27,10 +27,10 @@ const WorkExperience = () => {
             defaultActiveIndex={1}
             slideWidth="auto"
             className="
-              h-[320px]
-              sm:h-[420px]
-              md:h-[520px]
-              lg:h-[560px]
+              h-[220px]
+              sm:-[320px]
+              md:h-[420px]
+              lg:h-[460px]
             "
           />
         </motion.div>
