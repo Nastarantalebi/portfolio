@@ -142,7 +142,7 @@ export function PerspectiveCarousel({
       tabIndex={tabIndex ?? 0}
       onKeyDown={handleKeyDown}
       className={cn(
-        "relative isolate h-full w-full overflow-hidden",
+        "relative isolate h-full w-full overflow-visible",
         className,
       )}
       {...props}
@@ -167,7 +167,7 @@ export function PerspectiveCarousel({
               >
                 <motion.div
                   className={cn(
-                    "flex w-full flex-col items-center gap-3 will-change-transform",
+                    "flex w-full flex-col items-center gap-3 will-change-transform ",
                     slideClassName,
                   )}
                   animate={{
@@ -196,7 +196,7 @@ export function PerspectiveCarousel({
                         aspect-video
                         w-full
                         overflow-hidden
-                        rounded-lg
+                        rounded-l
                       "
                     onClick={() => selectSlide(index)}
                   >
@@ -223,7 +223,8 @@ export function PerspectiveCarousel({
           className={cn(
             `
   absolute
-  bottom-5
+  -bottom-10
+  mb-3
   left-1/2
   z-10
   flex
