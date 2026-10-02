@@ -1,4 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import SectionHeading from "./SectionHeading";
 
