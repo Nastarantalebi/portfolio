@@ -33,7 +33,7 @@ export default function Research() {
         {researchAreas.map((area) => (
           <div key={area.title} className="mb-14">
             <h3 className="mb-6 text-lg font-medium text-accent">{area.title}</h3>
-            <div className="grid gap-3">
+            <div className="grid gap-3 text-white">
               {area.items.map((item, i) => (
                 <motion.div
                   key={item}
