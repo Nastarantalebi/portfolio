@@ -57,7 +57,7 @@ export const projects = [
     description:
       "Centralized AI gateway where each organization holds a wallet, tops up credit, and allocates budget to its users, enabling access to LLMs and other AI features across all connected internal systems.",
     tags: ["LLM Integration", "Wallet System", "Multi-Tenant", "Usage Metering"],
-    href: ""
+    href: "https://ai.mesal.ir/"
   },
   {
     number: "03",
