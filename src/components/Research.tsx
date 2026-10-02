@@ -47,7 +47,7 @@ export default function Research() {
                     <span className="mt-1 text-xs text-accent">0{i + 1}</span>
                     <p className="text-base md:text-lg">{item}</p>
                   </div>
-                  <ArrowUpRight className="size-5 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+                  {/* <ArrowUpRight className="size-5 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /> */}
                 </motion.div>
               ))}
             </div>
