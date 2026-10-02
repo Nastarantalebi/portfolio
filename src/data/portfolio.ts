@@ -103,7 +103,19 @@ export const projects = [
 
 export const skills = {
   frontend: ["React", "TypeScript", "JavaScript", "HTML/CSS","Next.js", "Redux", "Zustand", "Context API", "Node.js", "React-router-dom", "React-hook-form", "Docker", "Framer-motion"],
-  design: ["UI/UX Design", "HCI", "Figma", "Wireframing", "Prototyping", "Usability Testing"],
+  design: [
+    "User-Centered Design",
+    "Interaction Design",
+    "UX Research",
+    "Usability Testing & Evaluation",
+    "User Flows",
+    "Information Architecture",
+    "Wireframing",
+    "Prototyping",
+    "HCI",
+    "Design Systems",
+    "Figma"
+  ],
   ai: ["Python", "scikit-learn", "TensorFlow", "PyTorch", "Classification", "Regression", "Feature Engineering", "Image processing"],
   data: ["NumPy", "Pandas", "Matplotlib", "Seaborn", "Data Analysis", "Statistical Analysis"],
 };
