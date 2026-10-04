@@ -77,7 +77,7 @@ export const projects = [
     description:
       "A comprehensive electronic medical record platform covering patient encounters, consultations and pharmacy interactions.",
       tags: ["React", "TypeScript", "UX", "Enterprise", "Multi-Tenant"],
-      href: "https://emr.mesal.ir/"
+      href: "https://clinic.mesal.ir/"
   },
   {
     number: "06",
@@ -133,62 +133,149 @@ export const research = [
   "Real-time UX Adaptation: Measuring performance impact of dynamic interface changes",
 ];
 
-export const IMAGES = [
+export const experiences = [
   {
-    src: "/works/0.png",
-    alt: "login page",
-    title: "Login Page",
+    number: "01",
+    title: "Correspondence Automation System",
+    indicator: "Front-end Development",
+    description:
+      "End-to-end intra- and inter-organizational correspondence platform covering letter registration, approval workflow, digital signature and stamp, and dispatch to other organizations or individual recipients.",
+    href: "https://letters.mesal.ir/",
+    images: [
+      {
+        src: "/works/letters1.jpeg",
+        alt: "Correspondence system",
+      },
+      {
+        src: "/works/letters2.png",
+        alt: "Correspondence dashboard",
+      },
+      {
+        src: "/works/letters3.png",
+        alt: "Stamp interface",
+      },
+    ],
   },
+
   {
-    src: "/works/1.jpeg",
-    alt: "letters page",
-    title: "Letters page",
-  },
-  {
-    src: "/works/8.png",
-    alt: "letters dashboard",
-    title: "Letters Dashboard",
+    number: "02",
+    title: "Wellness & Massage Management",
+    indicator: "Front-end Development",
+    description:
+      "A responsive management and customer-facing platform for wellness and massage centers, including service presentation, treatment plans, and operational interfaces.",
+    href: "https://wellness.mesal.ir/",
+    images: [
+      {
+        src: "/works/wellness1.png",
+        alt: "Wellness landing page",
+      },
+      {
+        src: "/works/wellness2.png",
+        alt: "Wellness management interface",
+      },
+      {
+        src: "/works/wellness3.png",
+        alt: "Wellness treatment plans",
+      },
+    ],
   },
 
   {
-    src: "/works/5.png",
-    alt: "letter parafs",
-    title: "Letter Parafs",
-  },
-  {
-    src: "/works/6.png",
-    alt: "letter logs",
-    title: "Letter Logs",
-  },
-  {
-    src: "/works/7.png",
-    alt: "letter stamp",
-    title: "Letter Stamp",
-  },
-  {
-    src: "/works/9.png",
-    alt: "ERP dashboard",
-    title: "ERP Dashboard",
-  },
-  {
-    src: "/works/10.png",
-    alt: "Wellness dashboard",
-    title: "Wellness Dashboard",
-  },
-  {
-    src: "/works/11.png",
-    alt: "Wellness landing",
-    title: "Wellness Landing",
-  },
-  {
-    src: "/works/16.png",
-    alt: "Wellness plans",
-    title: "Wellness plans",
-  },
-  {
-    src: "/works/12.png",
-    alt: "Wellness landing",
-    title: "Wellness Landing",
+    number: "03",
+    title: "Factory Management (ERP)",
+    indicator: "Front-end Development",
+    description:
+      "Front-end contribution to software supporting end-to-end factory accounting and operational management.",
+    href: "https://erp.mesal.ir/",
+    images: [
+      {
+        src: "/works/erp.png",
+        alt: "Factory ERP interface",
+      },
+      {
+        src: "/works/erp1.png",
+        alt: "Factory ERP dashboard",
+      },
+      {
+        src: "/works/erp3.png",
+        alt: "Factory ERP interface",
+      },
+    ],
   },
 
+  {
+    number: "04",
+    title: "Stars Telegram",
+    indicator: "UI Design",
+    description:
+      "A web interface designed for earning Telegram Stars.",
+    href: "",
+    images: [
+      {
+        src: "/works/stars.png",
+        alt: "Stars Telegram interface",
+      },
+      {
+        src: "/works/stars1.png",
+        alt: "Stars Telegram",
+      },
+      {
+        src: "/works/stars3.png",
+        alt: "Stars Telegram",
+      },
+    ],
+  },
+
+  {
+    number: "05",
+    indicator: "UI Design",
+    title: "Shoe Store",
+    description:
+      "A modern e-commerce interface focused on product presentation, navigation, and a streamlined shopping experience.",
+    href: "",
+    images: [
+      {
+        src: "/works/shoes.webp",
+        alt: "Shoe store page",
+      },
+    ],
+  },
+
+  {
+    number: "06",
+    indicator: "UI Design",
+    title: "Hamneshin Platform",
+    description:
+      "A social networking platform designed to help users discover and connect with friends, colleagues, and people with similar academic or professional interests.",
+    href: "",
+    images: [
+      {
+        src: "/works/hamneshin.webp",
+        alt: "Hamneshin platform",
+      },
+
+      {
+        src: "/works/hamneshin2.png",
+        alt: "Hamneshin platform",
+      },      {
+        src: "/works/hamneshin1.png",
+        alt: "Hamneshin platform",
+      },
+    ],
+  },
+  {
+    number: "07",
+    indicator: "UI Design",
+    title: "Grocery Platform",
+description:
+  "An early exploration of grocery e-commerce interfaces, focusing on visual hierarchy, product presentation, and intuitive user flows.",
+    href: "",
+    images: [
+      {
+        src: "/works/Grocery.png",
+        alt: "Grocery platform",
+      },
+
+    ],
+  },
 ];
