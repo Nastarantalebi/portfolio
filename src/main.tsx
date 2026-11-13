@@ -1,10 +1,19 @@
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import "./styles/globals.css";
 import App from "./App";
 
-createRoot(document.getElementById("root")!).render(
+const rootEl = document.getElementById("root")!;
+const app = (
   <StrictMode>
     <App />
   </StrictMode>
 );
+
+// In production the HTML is pre-rendered, so hydrate it.
+// In dev there's only the placeholder comment, so render normally.
+if (rootEl.firstElementChild) {
+  hydrateRoot(rootEl, app);
+} else {
+  createRoot(rootEl).render(app);
+}
